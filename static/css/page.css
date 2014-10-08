@@ -1,0 +1,122 @@
+
+
+
+
+#top-bar, #side-bar, #bottom-bar {
+	position: fixed;
+	z-index: 1; /* needed to show above google maps */
+	background-color: rgba(255,255,255,0.9);
+}
+
+
+
+
+
+#top-bar {
+	z-index: 2; /* want this to be above other bars */
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	top: 24px;
+	left: 90px; /* enough to not obstruct google maps controls */
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+#top-bar h1 {
+	margin: 0;
+	height: 100%;
+	line-height: inherit;
+	font-size: 1.3em;
+	font-weight: normal;
+	font-family: "Montserrat";
+	display: inline-block;
+}
+#top-bar h1 .glyphicon-heart {
+	font-size: 0.9em;
+	color: #e74c3c;
+}
+#top-bar .tagline {
+	font-family: "Montserrat";
+	font-size: 0.8em;
+	display: inline-block;
+	margin-left: 10px;
+	font-style: italic;
+}
+
+
+
+
+
+#side-bar {
+	width: 180px;
+	max-height: 100%;
+	min-height: 30px;
+	right: 0;
+	top: 70px;
+	-webkit-transition: top 0.3s; /* transition for media query "top" alteration when window gets too small */
+	-moz-transition: top 0.3s;
+	-ms-transition: top 0.3s;
+	-o-transition: top 0.3s;
+	transition: top 0.3s;
+}
+#side-bar #expand-button {
+	width: 26px;
+	height: 26px;
+	border: 0;
+	display: inline-block;
+	float: left;
+	margin-top: 2px;
+	margin-left: 2px;
+	padding-top: 4px;
+	padding-left: 5px;
+}
+#side-bar h2 {
+	height: 30px;
+	line-height: 30px;
+	margin: 0;
+	margin-left: 18px;
+	display: inline-block;
+	float: left;
+	font-size: 1.1em;
+}
+
+
+
+
+
+
+#bottom-bar {
+	width: 100%;
+	bottom: 30px; /* probably some Terms of Use about not covering up the Google watermark */
+	height: 55px;
+	line-height: 50px;
+	background-color: rgba(255,255,255,0.6);
+}
+#bottom-bar h2 {
+	font-family: "Montserrat";
+	color: #2980b9;
+	font-size: 1.1em;
+	margin-left: 15px;
+	display: inline-block;
+}
+#bottom-bar #search-input {
+	width: 70%;
+	display: inline-block;
+	margin-left: 15px;
+}
+#bottom-bar #search-button {
+	display: inline-block;
+	position: relative;
+	top: -1px; /* trying to attain pixel-perfectness */
+}
+
+
+
+
+
+
+

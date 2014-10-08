@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <title>I &lt;3 Food Trucks</title>
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/maps.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/page.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/effects.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaQueries.css') }}">
+</head>
+
+<body>
+
+<div id="loader">
+    <img src="{{ url_for('static', filename='img/loader.gif') }}">
+</div>
+
+<div id="top-bar">
+    <h1>I <span class="glyphicon glyphicon-heart spinny"></span> Food Trucks</h1>
+    <p class="tagline">
+        Made by <a href="http://www.compscieddy.com">Eddie Lee</a> for an <a
+            href="https://github.com/uber/coding-challenge-tools">Uber Coding Challenge</a>.
+    </p>
+</div>
+
+<div id="bottom-bar">
+    <h2>Search Bar Area</h2>
+    <input type="text" class="form-control controls" id="search-input">
+    <button type="button" class="btn btn-primary" id="search-button">
+        <span class="glyphicon glyphicon-search"></span>
+    </button>
+</div>
+
+
+<div id="map-canvas">
+</div>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $(function () { // shorthand for $(document).ready()
+        debug_flag = true;
+
+        $("#loader").hide();
+
+    });
+</script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/underscore-min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/backbone-min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/mustache.js') }}"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc4iNKp00eQVyZcRAhUIv6Sz8Gi1dAmiQ&sensor=true&libraries=places"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/utility.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/googleMaps.js') }}"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,87 @@
+/* Google Maps */
+
+#map-canvas {
+	height: 100%;
+}
+
+.marker-applicant, .marker-address, .marker-facilityType, .marker-foodItems {
+	margin: 0;
+	width: 200px;
+}
+
+.marker-address {
+	margin: 5px 0;
+}
+
+.marker-facilityContainer span:first-of-type {
+	margin-left: 2px;
+}
+.marker-facilityContainer span:nth-of-type(2) {
+	margin-left: 10px;
+}
+
+.marker-facilityType, .marker-otherFacilityType {
+	padding: 0px 3px;
+	text-transform: uppercase;
+	font-size: 0.85em;
+}
+.marker-facilityType {
+	background-color: #b4d8fb;
+	outline: 1px solid #3498db;
+	color: white;
+}
+.marker-otherFacilityType {
+	background-color: #f0f0f0;
+	outline: 1px solid #ddd;
+	color: #bbb;
+}
+
+.marker-applicant {
+	font-size: 1.5em;
+	max-height: 36px;
+	overflow: hidden;
+    cursor: pointer;
+}
+.marker-foodItems {
+	max-height: 45px;
+	overflow-y: scroll;
+    cursor: pointer;
+}
+
+.marker-applicant:active {
+	height: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 5;
+}
+.marker-foodItems:active {
+	height: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 45px;
+	left: 0;
+	background-color: white;
+	z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

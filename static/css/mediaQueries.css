@@ -1,0 +1,25 @@
+@media all and (max-width: 710px) {
+	#side-bar {
+		top: 85px;
+	}
+	#bottom-bar #search-input {
+		width: 55%;
+	}
+}
+
+@media all and (max-width: 600px) {
+	#top-bar .tagline {
+		display: none;
+	}
+}
+
+@media all and (max-width: 460px) {
+	#bottom-bar h2 {
+		display: none;
+	}
+	#bottom-bar #search-input {
+		width: 70%;
+	}
+}
+
+
